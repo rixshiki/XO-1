@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>XOgame</title>
+
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		console.log("menu")
+	})
+	
+	function toPlay(){
+		size = document.getElementById('size').value
+		//console.log(document.getElementById('size').value)
+		if(size >= 3){
+			window.location = window.location.href +"/savesize/"+ size
+		}
+		else{
+			alert('Greater than or equal 3')
+		}
+	}
+
+	
+</script>
+</head>
+<body>
+	<div class="index-page-container center">
+		<h1>XO Game</h1>
+		<input id="size" class="index-input-size" placeholder="Input board size nxn (3+)">
+		<a class="btn soon center">Single Player (Coming soon..)</a>
+		<a class="btn index-btn center" onclick="toPlay()">2 Player</a>
+	</div>
+</body>
+</html>
