@@ -15,18 +15,21 @@
 </script>
 </head>
 <body>
+<div class="play-page-container">
 <div class="center" style="height: 20vh;">
 	<button class="btn play-btn" onclick="mainmenu()">Main menu</button>
 	<button class="btn play-btn" onclick="replay()">Replay</button>
 	<button class="btn play-btn" onclick="restart()">Restart</button>
 </div>
-	
-	
+
 	<p id="size_txt">size: N x N</p>
 	
 	<div id="board" style="height: 80vh; padding: 0 20%;"></div>
 	
 	<input type="hidden" id="size" th:value="${size}">
 	<input type="hidden" id="turnCount" th:value="${turnCount}">
+
+</div>
+
 </body>
 </html>

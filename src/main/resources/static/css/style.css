@@ -24,6 +24,11 @@ h1{
 .index-page-container{
 	flex-flow: column;
 	height: 100vh;
+	background-image: radial-gradient(white, #efefef, #b9deed);
+}
+.play-page-container{
+	background-image: radial-gradient(#efefef, #efefef, #b9deed);
+	/*background: linear-gradient(90deg, #b9deed, #efefef);*/
 }
 .btn {
 	box-sizing: border-box;
@@ -130,7 +135,7 @@ h1{
 	font-size: 100%;
 	font-weight: 400;
 	line-height: 1;
-	background-color: transparent;
+	background-color: white;
 	border: 2px solid var(--blue);
 	border-radius: 0.6em;
 	color: var(--blue);
